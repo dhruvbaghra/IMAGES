@@ -1,0 +1,275 @@
+/* icons used are given class -ico */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px red solid; */
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  height: 2px;
+  background-color: #e5e5e5;
+  border: none;
+}
+a {
+  color: inherit;
+}
+a:visited {
+  color: #000;
+}
+a:hover {
+  color: #000;
+}
+a:hover {
+  color: #000;
+}
+/* google icons  */
+.material-symbols-outlined {
+  color: rgb(100, 100, 100);
+  padding: 0px 20px;
+  cursor: pointer;
+}
+/* header section */
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+}
+
+/* left section of header */
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-ico {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.logo-site {
+  display: flex;
+}
+.site-logo-ico {
+  cursor: pointer;
+}
+.site-name {
+  cursor: pointer;
+}
+.home-logo-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*center search section of header */
+.center-search {
+  display: flex;
+}
+
+/* form tag in center-search */
+.center-search form {
+  display: flex;
+  border: 1px rgb(177, 177, 177) solid;
+  height: 40px;
+}
+.search-box {
+  /* remove till x after prod  */
+  /* background-color: rgb(132, 208, 252); */
+  /* x */
+  width: 575px;
+  height: 95%;
+  font-size: 16px;
+  border: 0px solid black;
+  /* border: 1px transparent solid; */
+  border-radius: 4px;
+}
+.center-search .search-box:focus {
+  /* remove till x after prod  */
+  /* background-color: rgb(255, 144, 236); */
+  /* x */
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.search-btn {
+  height: 100%;
+  width: 55px;
+  border-left: 1px #ccc solid;
+  border-right: 0px black solid;
+  border-bottom: 0px black solid;
+  border-top: 0px black solid;
+}
+
+.search-mic-ico {
+  padding-top: 10px;
+  background-color: #f9f9f9;
+  border-radius: 51%;
+}
+
+/* right section of header */
+
+.upload-notification-user {
+  display: flex;
+}
+
+.right {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* main section */
+.main {
+  height: 97vh;
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+/* sidebar styling */
+
+.sidebar {
+  height: 100%;
+  width: 18%;
+  background-color: white;
+  overflow-y: hidden;
+  color: black;
+}
+
+.sidebar-nav {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 10px; */
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding-left: 1px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.subscription {
+  color: #606060;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  padding-right: 23px;
+  padding-left: 22px;
+  font-size: 0.8rem;
+  font-weight: 550;
+  letter-spacing: 0.4px;
+}
+
+.subscription-channel-img {
+  padding-left: 24px;
+}
+.subscription-channel-name {
+  padding-left: 9px;
+  padding-top: 5px;
+}
+
+/* search section styling */
+
+.filter-section {
+  display: flex;
+}
+
+.filter-btn {
+  font-size: 14px;
+  padding-left: 24px;
+  padding-right: 5px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.filter-ico {
+  margin-top: 17px;
+}
+
+.result-video{
+  display:flex;
+}
+
+
+.video-thumbnail {
+  width: 360px;
+  height: 201px;
+  margin-right: 10px;
+}
+
+.thumbnail-img {
+  object-fit: cover;
+  height: 95%;
+  width: 100%;
+}
+
+.channel-img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.channel-link {
+  font-size: 12px;
+  color: #606060;
+}
+
+.info {
+  display: flex;
+}
+
+.video-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title-heading {
+  line-height: 18px;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.video-data {
+  display: flex;
+  text-decoration: none;
+  color: #606060;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+/* responsiveness using medai queries */
+
+@media (max-width: 760px) {
+  .sidebar {
+    display: none;
+  }
+  .center-search {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .center-search .search-box {
+    width: 25rem;
+  }
+}
